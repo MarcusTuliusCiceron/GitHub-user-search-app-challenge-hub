@@ -1,0 +1,11 @@
+body.dark{
+    background-color: $DarkDarkBlue;
+}
+
+main.dark{
+    .results{
+        background-color: $DarkBlue;
+        box-shadow: none;
+        color: $DarkWhite;
+    }
+}

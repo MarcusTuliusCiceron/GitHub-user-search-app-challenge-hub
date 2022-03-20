@@ -1,0 +1,63 @@
+@import "variables";
+@import "mixin";
+@import "searchBar";
+@import "lightMode.scss";
+@import "darkMode";
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    padding: 3rem;
+}
+
+main{
+    h1{
+        font-size: 26px;
+        color: $LightDarkGrey;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 22px;
+        color: $LightDarkGrey;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 16px;
+        color: $DarkBrightBlue;
+        font-weight: 400;
+    }
+    h4{
+        font-size: 13px;
+        color: $LightGreyishBlue;
+        font-weight: 400;
+    }
+    p{
+        font-size: 15px;
+        color: $LightDarkGrey;
+    }
+}
+
+main.dark{
+    h1{
+        color: $DarkWhite;
+    }
+    h2{
+        color: $DarkWhite;
+    }
+
+    h4{
+        color: $LightGreyishBlue;
+    }
+    p{
+        color: $LightDarkGrey;
+    }
+}
+
