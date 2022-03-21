@@ -6,11 +6,13 @@ body{
     align-items: center;
     justify-content: center;
     transition: all 400ms ease-in-out;
+    transition-property: background-color, color, box-shadow, background-image;
 }
 
 main{
     width: 730px;
     transition: all 400ms ease-in-out;
+    transition-property: background-color, color, box-shadow, background-image;
     @include breakpoint-down(medium){
         width: 573px;
     }
@@ -30,10 +32,108 @@ main{
     }
 
     .results{
-        height: 444px;
+        min-height: 444px;
+        height: auto;
         background-color: $LightWhite;
         box-shadow: 0px 3px 30px hsla(226.7,46.2%,50.4%, 0.4);
         border-radius: 15px;
         transition: all 400ms ease-in-out;
+        transition-property: background-color, color, box-shadow, background-image;
+        padding: 40px;
+        display: flex;
+        visibility: visible;
+        .avatar{
+            width: 117px;
+            height: 117px;
+            border-radius: 50%;
+
+            margin-right: 36px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .text{
+            width: calc(100% - 117px);
+            display: flex;
+            flex-direction: column;
+            &__header{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                &__left{
+                    h2{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            &__bio{
+                margin-bottom: 20px;
+            }
+            &__center{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                background-color: $LightLightGrey;
+                transition: all 400ms ease-in-out;
+                transition-property: background-color, color, box-shadow, background-image;
+                padding: 32px 20px;
+                border-radius: 15px;
+                margin-bottom: 40px;
+            }
+            &__logos{
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(2, auto);
+                gap: 15px;
+                margin-bottom: 40px;
+                &__location__icon, &__twitter__icon, &__blog__icon, &__company__icon{
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-right: 20px;
+                }
+                &__location{
+                    display: flex;
+                    &__icon{
+                        width: 14px;
+                        height: 20px;
+                        background-image: url(../../assets/icon-location.svg);
+                    }
+                }
+                &__twitter{
+                    display: flex;
+                    &__icon{
+                        height: 20px;
+                        width: 16px;
+                        background-image: url(../../assets/icon-twitter.svg);
+                    }
+                }
+                &__blog{
+                    display: flex;
+                    &__icon{
+                        height: 20px;
+                        width: 20px;
+                        background-image: url(../../assets/icon-website.svg);
+                    }
+                }
+                &__company{
+                    display: flex;
+                    &__icon{
+                        height: 20px;
+                        width: 20px;
+                        background-image: url(../../assets/icon-company.svg);
+                    }
+                }
+            }
+        }
+        
     }
+}
+.results.hidden{
+    visibility: hidden;
+}
+
+
+*.undefined{
+    opacity: 0.4;
 }

@@ -43,6 +43,13 @@ main{
         font-size: 15px;
         color: $LightDarkGrey;
     }
+    a{
+        text-decoration: none;
+        color: $LightGreyishBlue;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
 
 main.dark{
@@ -54,10 +61,13 @@ main.dark{
     }
 
     h4{
-        color: $LightGreyishBlue;
+        color: $DarkWhite;
     }
     p{
-        color: $LightDarkGrey;
+        color: $DarkWhite;
+    }
+    a{
+        color: $DarkWhite;
     }
 }
 

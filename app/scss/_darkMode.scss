@@ -4,8 +4,55 @@ body.dark{
 
 main.dark{
     .results{
+        
+    }
+}
+
+body.dark{
+    background-color: $DarkDarkBlue;
+}
+
+main.dark{
+    .results{
         background-color: $DarkBlue;
         box-shadow: none;
-        color: $DarkWhite;
+        .text{
+            
+            
+            &__center{
+                background-color: $DarkDarkBlue;
+            }
+            &__logos{
+                &__location{
+                    &__icon{
+                        background-image: url(../../assets/icon-location_copy.svg);
+                    }
+                }
+                &__twitter{
+                    &__icon{
+                        background-image: url(../../assets/icon-twitter_copy.svg);
+                    }
+                }
+                &__blog{
+                    &__icon{
+                        background-image: url(../../assets/icon-website_copy.svg);
+                    }
+                }
+                &__company{
+                    &__icon{
+                        background-image: url(../../assets/icon-company_copy.svg);
+                    }
+                }
+            }
+        }
+        
     }
+}
+.results.hidden{
+    visibility: hidden;
+}
+
+
+*.undefined{
+    opacity: 0.4;
 }

@@ -90,6 +90,7 @@
     height: 20px;
     font-size: 13px;
     color: $LightGreyishBlue;
+    font-weight: bold;
     font-family: 'Space Mono', monospace;
     text-align: left;
     background-color: transparent;
@@ -135,7 +136,7 @@
     text-align: left;
     border: none;
     position: relative;
-    background-color: $DarkDarkBlue;
+    
     &::after{
         content: "";
         position: absolute;
