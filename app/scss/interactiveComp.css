@@ -1,0 +1,188 @@
+.search__bar {
+  position: relative;
+  width: 100%;
+}
+
+.search__bar .search__bar__input {
+  width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  border: none;
+  padding-left: 70px;
+  -webkit-box-shadow: 0px 3px 30px rgba(70, 96, 187, 0.4);
+          box-shadow: 0px 3px 30px rgba(70, 96, 187, 0.4);
+  font-size: 18px;
+  color: #4B6A9B;
+  font-family: 'Space Mono', monospace;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+@media (max-width: 43.125em) {
+  .search__bar .search__bar__input {
+    font-size: 13px;
+    padding-left: 45px;
+  }
+}
+
+.search__bar .search__bar__input:focus {
+  outline: none;
+}
+
+.search__bar .search__bar__button {
+  width: 106px;
+  height: 50px;
+  color: #FEFEFE;
+  background-color: #0079FF;
+  position: absolute;
+  border-radius: 15px;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+}
+
+@media (max-width: 43.125em) {
+  .search__bar .search__bar__button {
+    width: 84px;
+  }
+}
+
+.search__bar .search__bar__button:hover {
+  background-color: #60ABFF;
+  cursor: pointer;
+}
+
+.search__bar .search__bar__error {
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  top: 50%;
+  right: 125px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.search__bar .search__bar__error.visible {
+  visibility: visible;
+}
+
+.search__bar .search__bar__icon {
+  width: 24px;
+  aspect-ratio: 1;
+  background-image: url(/assets/icon-search.svg);
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+@media (max-width: 43.125em) {
+  .search__bar .search__bar__icon {
+    left: 23px;
+  }
+}
+
+.search__bar.dark .search__bar__input {
+  background-color: #1E2A47;
+  color: #FFFFFF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.theme__toggle {
+  width: 89px;
+  height: 20px;
+  font-size: 13px;
+  color: #4B6A9B;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
+.theme__toggle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1;
+  background-image: url(../../assets/icon-moon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.theme__toggle:hover {
+  color: #222731;
+  cursor: pointer;
+}
+
+.theme__toggle:hover::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1;
+  background-image: url(../../assets/icon-moon_copy.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.theme__toggle.dark {
+  width: 89px;
+  height: 20px;
+  font-size: 13px;
+  color: #FFFFFF;
+  font-family: 'Space Mono', monospace;
+  text-align: left;
+  border: none;
+  position: relative;
+}
+
+.theme__toggle.dark::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1;
+  background-image: url(../../assets/icon-sun.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.theme__toggle.dark:hover {
+  color: #90A4D4;
+}
+
+.theme__toggle.dark:hover::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1;
+  background-image: url(../../assets/icon-sun_copy.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  cursor: pointer;
+}
+/*# sourceMappingURL=interactiveComp.css.map */

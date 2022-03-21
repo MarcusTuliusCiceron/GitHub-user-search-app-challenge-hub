@@ -4,21 +4,9 @@ body.dark{
 
 main.dark{
     .results{
-        
-    }
-}
-
-body.dark{
-    background-color: $DarkDarkBlue;
-}
-
-main.dark{
-    .results{
         background-color: $DarkBlue;
         box-shadow: none;
         .text{
-            
-            
             &__center{
                 background-color: $DarkDarkBlue;
             }
@@ -47,12 +35,4 @@ main.dark{
         }
         
     }
-}
-.results.hidden{
-    visibility: hidden;
-}
-
-
-*.undefined{
-    opacity: 0.4;
 }

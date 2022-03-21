@@ -9,6 +9,7 @@
         padding-left: 70px;
         font-size: 18px;
         color: $LightGreyishBlue;
+        box-shadow: 0px 3px 30px hsla(226.7,46.2%,50.4%, 0.4);
         font-family: 'Space Mono', monospace;
         transition: all 400ms ease-in-out;
         @include breakpoint-down(small){
@@ -75,12 +76,7 @@
     .search__bar__input{
         background-color: $DarkBlue;
         color: $DarkWhite;
-    }
-}
-
-.search__bar.light{
-    .search__bar__input{
-        box-shadow: 0px 3px 30px hsla(226.7,46.2%,50.4%, 0.4);
+        box-shadow: none;
     }
 }
 
