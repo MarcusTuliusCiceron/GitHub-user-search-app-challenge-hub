@@ -23,29 +23,65 @@ main{
         font-size: 26px;
         color: $LightDarkGrey;
         font-weight: bold;
+        @include breakpoint-down(medium){
+
+        }
+        @include breakpoint-down(small){
+            
+        }
     }
     h2{
         font-size: 22px;
         color: $LightDarkGrey;
         font-weight: bold;
+        @include breakpoint-down(medium){
+
+        }
+        @include breakpoint-down(small){
+            font-size: 16px;
+        }
     }
     h3{
         font-size: 16px;
         color: $DarkBrightBlue;
         font-weight: 400;
+        @include breakpoint-down(medium){
+
+        }
+        @include breakpoint-down(small){
+            
+        }
     }
     h4{
         font-size: 13px;
         color: $LightGreyishBlue;
         font-weight: 400;
+        @include breakpoint-down(medium){
+
+        }
+        @include breakpoint-down(small){
+            
+        }
     }
     p{
         font-size: 15px;
         color: $LightDarkGrey;
+        @include breakpoint-down(medium){
+
+        }
+        @include breakpoint-down(small){
+            font-size: 13px;
+        }
     }
     a{
         text-decoration: none;
         color: $LightGreyishBlue;
+        @include breakpoint-down(medium){
+
+        }
+        @include breakpoint-down(small){
+            
+        }
         &:hover{
             text-decoration: underline;
         }

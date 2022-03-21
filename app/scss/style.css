@@ -269,6 +269,7 @@ main .results {
 
 @media (max-width: 64rem) {
   main .results {
+    padding: 24px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 117px calc(100% - 117px);
@@ -287,6 +288,13 @@ main .results .avatar {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 43.125em) {
+  main .results .avatar {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 main .results .text {
@@ -316,6 +324,16 @@ main .results .text {
   }
 }
 
+@media (max-width: 43.125em) {
+  main .results .text {
+    padding: 24px;
+    -ms-grid-columns: 70px calc(100% - 70px);
+        grid-template-columns: 70px calc(100% - 70px);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+  }
+}
+
 main .results .text__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,6 +352,12 @@ main .results .text__header {
             flex-direction: column;
     grid-area: B;
     padding-left: 30px;
+  }
+}
+
+@media (max-width: 43.125em) {
+  main .results .text__header {
+    margin-bottom: 15px;
   }
 }
 
@@ -399,6 +423,15 @@ main .results .text__logos {
   main .results .text__logos {
     grid-area: E;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 43.125em) {
+  main .results .text__logos {
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
   }
 }
 
@@ -526,6 +559,12 @@ main h2 {
   font-weight: bold;
 }
 
+@media (max-width: 43.125em) {
+  main h2 {
+    font-size: 16px;
+  }
+}
+
 main h3 {
   font-size: 16px;
   color: #0079FF;
@@ -541,6 +580,12 @@ main h4 {
 main p {
   font-size: 15px;
   color: #2B3442;
+}
+
+@media (max-width: 43.125em) {
+  main p {
+    font-size: 13px;
+  }
 }
 
 main a {
