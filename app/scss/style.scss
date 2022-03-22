@@ -13,7 +13,7 @@ html{
     padding: 0;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Space Mono', monospace;
     padding: 3rem;
 }
@@ -27,7 +27,7 @@ main{
 
         }
         @include breakpoint-down(small){
-            
+            height: max-content;
         }
     }
     h2{

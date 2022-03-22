@@ -33,8 +33,7 @@ main{
 
     .results{
         position: relative;
-        min-height: 444px;
-        height: auto;
+        
         background-color: $LightWhite;
         box-shadow: 0px 3px 30px hsla(226.7,46.2%,50.4%, 0.4);
         border-radius: 15px;
@@ -47,7 +46,7 @@ main{
             padding: 24px;
             display: grid;
             grid-template-columns: 117px calc(100% - 117px);
-            grid-template-rows: 117px 106px 85px 103px;
+            grid-template-rows: 117px 106px 85px 150px;
             grid-template-areas: 
             "A B"
             "C C"
